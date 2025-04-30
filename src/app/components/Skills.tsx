@@ -23,9 +23,11 @@ const Skills = () => {
           "Nginx",
           "SaaS",
           "react-i18next",
+          "Web crawlers",
           "Puppeteer",
           "RESTful APIs",
           "Cross-Browser Development",
+          "Figma",
         ].map((skill) => (
           <span
             key={skill}
