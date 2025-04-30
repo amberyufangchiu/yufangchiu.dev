@@ -24,7 +24,7 @@ export default function Home() {
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
           Want to chat? I want to connect with likeminded individuals!
           <br />
-          send me a dm and I'll gladly respond!
+          send me a dm and I&apos;ll gladly respond!
         </p>
       </section>
       <IconBar />
