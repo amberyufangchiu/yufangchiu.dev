@@ -27,7 +27,10 @@ function highlightSkills(text: string) {
   const parts = text.split(new RegExp(`(${skillKeywords.join("|")})`, "gi"));
   return parts.map((part, idx) =>
     skillKeywords.includes(part) ? (
-      <strong key={idx} className="text-gray-800 font-medium">
+      <strong
+        key={idx}
+        className="text-gray-800 font-medium dark:text-gray-100"
+      >
         {part}
       </strong>
     ) : (
@@ -51,7 +54,7 @@ function JobEntry({
       role="button"
       aria-expanded={isOpen}
       onClick={() => setIsOpen(!isOpen)}
-      className="flex flex-col md:flex-row p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 cursor-pointer mb-4"
+      className="flex flex-col md:flex-row p-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300 cursor-pointer mb-4"
     >
       {/* Image */}
       <img
@@ -70,9 +73,13 @@ function JobEntry({
                 {tagline}
               </span>
             </h3>
-            <p className="text-sm text-gray-700 mt-1">{role}</p>
+            <p className="text-sm text-gray-700 mt-1 dark:text-gray-100">
+              {role}
+            </p>
           </div>
-          <div className="text-sm text-gray-500 mt-2 sm:mt-0">{date}</div>
+          <div className="text-sm text-gray-500 mt-2 sm:mt-0 dark:text-gray-100">
+            {date}
+          </div>
         </div>
 
         {/* Collapsible */}
@@ -81,7 +88,7 @@ function JobEntry({
             isOpen ? "max-h-96 mt-4 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <ul className="text-sm text-gray-600 pl-5 list-disc">
+          <ul className="text-sm text-gray-600 pl-5 list-disc dark:text-gray-100">
             {details.map((item, idx) => (
               <li key={idx} className="pb-3">
                 {highlightSkills(item)}
