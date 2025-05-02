@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 interface JobEntryProps {
@@ -57,7 +58,9 @@ function JobEntry({
       className="flex flex-col md:flex-row p-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300 cursor-pointer mb-4"
     >
       {/* Image */}
-      <img
+      <Image
+        width={48}
+        height={48}
         src={imageUrl}
         alt={`${company} logo`}
         className="w-12 h-12 rounded-full object-cover mr-4 mb-2 md:mb-0"
