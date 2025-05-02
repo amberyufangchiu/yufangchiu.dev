@@ -4,7 +4,9 @@ import React from 'react';
 const Projects = () => {
   return (
     <section className="my-20">
-      <h2 className="mb-6 text-3xl font-bold">Projects</h2>
+      <h2 className="mb-6 text-center text-3xl font-bold tracking-tighter text-gray-900 sm:text-5xl dark:text-gray-100">
+        Projects
+      </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <a
           href="https://murmur-ecru.vercel.app/"
