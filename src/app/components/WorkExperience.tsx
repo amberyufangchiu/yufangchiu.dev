@@ -8,13 +8,14 @@ const WorkExperience = () => {
       <div className="space-y-8">
         <JobEntry
           company="Red Soldier Limited"
-          tagline="Modern CMS Development"
+          tagline="Custom CMS Development"
           role="Software Engineer"
           date="Dec 2023 - Present"
           details={[
-            'Led the development of responsive and interactive Content Management Systems (CMS) using React and TypeScript, ensuring a seamless user experience across platforms.',
-            'Collaborated with back-end developers to integrate front-end components with server-side logic, spearheading efforts to optimize application speed and scalability.',
-            'Implemented and consumed RESTful APIs, overseeing the process to ensure high performance and adherence to best practices.',
+            'Led frontend development and delivery of high-impact projects using React and TypeScript, ensuring on-time launches with a focus on performance, accessibility, and user experience',
+            'Owned the complete frontend lifecycle of a custom CMS, resolving complex bugs and delivering intuitive, polished user-facing features independently.',
+            'Implemented a reusable CMS Seed Template, accelerating future development cycles and establishing scalable, maintainable frontend architecture.',
+            'Resolved critical UI/UX and performance issues, achieving at least a 90% reduction in load times and enhancing overall product responsiveness and user satisfaction.',
           ]}
           imageUrl="/Red Soldier Limited Post.jpeg"
         />
@@ -26,9 +27,9 @@ const WorkExperience = () => {
           role="Software Engineer"
           date="Jun 2023 - Dec 2023"
           details={[
-            'Developed and maintained a high-traffic sports betting platform serving 100,000+ active users across Asia, using React to deliver responsive, user-friendly interfaces.',
-            'Introduced micro front-end architecture with Webpack, resolving early-stage UX issues and improving scalability across multiple product modules.',
-            'Built robust end-to-end tests with Cypress and TypeScript, achieving 90%+ test coverage and supporting reliable, high-quality software releases.',
+            'Implemented micro front-end architecture in new feature development, and resolved early-stage UX issues to enhance the overall experience across React-based projects using Webpack.',
+            'Developed and maintained a high-traffic platform serving over 100,000 active users, leveraging React to deliver fast, interactive, and user-friendly interfaces.',
+            'Achieved over 85% test coverage by implementing comprehensive End-to-End (E2E) testing with Cypress and TypeScript, ensuring reliable and high-quality releases.',
           ]}
           imageUrl="/onelab.png"
         />
@@ -40,9 +41,8 @@ const WorkExperience = () => {
           role="Front End Engineer"
           date="Apr 2022 – Jun 2023"
           details={[
-            'Built and launched the LnCarbon ESG platform using React, Redux, Recharts, and Nginx, enabling real-time emissions tracking and faster client onboarding through flexible data integration and visualization.',
-            'Built a scalable low-code SaaS data monitoring platform, empowering non-technical users to configure custom pipelines and alerts with minimal engineering support.',
-            'Developed and maintained the company website using Next.js, React, and react-i18next, delivering a fast, SEO-friendly, multilingual experience aligned with global branding goals.',
+            'Owned the development of a data visualization–driven sustainability management platform using React, SCSS, and RESTful APIs, ensuring compliance with government regulations and delivering seamless carbon emissions tracking for an enterprise client',
+            'Developed an efficient SaaS platform for a targeted advertising website, leveraging React, Ant Design, and LESS to deliver visually engaging charts and insightful analytics for end users.',
           ]}
           imageUrl="/LnData Logo.jpeg"
         />
