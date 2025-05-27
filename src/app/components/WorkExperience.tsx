@@ -2,9 +2,21 @@ import React from 'react';
 import JobEntry from './JobEntry';
 
 const WorkExperience = () => {
+  const triggerConfetti = () => {
+    window.dispatchEvent(new Event('download-cv'));
+  };
+
   return (
     <section className="mt-12">
-      <h2 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">Work Experience</h2>
+      <div className="flex flex-row items-center justify-between">
+        <h2 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">Work Experience</h2>
+        <button
+          onClick={triggerConfetti}
+          className="shadow-[inset_0_1px_0_0_rgba(75, 66, 66, 0.7)] inline-block cursor-pointer rounded-lg bg-[#b93e36] px-4 py-2 text-[13px] leading-[1.15] font-medium text-white transition duration-200 ease-in-out focus:ring-0 focus:outline-none"
+        >
+          📄 Get CV
+        </button>
+      </div>
       <div className="space-y-8">
         <JobEntry
           company="Red Soldier Limited"
