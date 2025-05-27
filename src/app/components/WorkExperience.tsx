@@ -29,7 +29,7 @@ const WorkExperience = () => {
             'Implemented a reusable CMS Seed Template, accelerating future development cycles and establishing scalable, maintainable frontend architecture.',
             'Resolved critical UI/UX and performance issues, achieving at least a 90% reduction in load times and enhancing overall product responsiveness and user satisfaction.',
           ]}
-          imageUrl="/Red Soldier Limited Post.jpeg"
+          imageUrl="/work-experience/Red Soldier Limited Post.jpeg"
         />
 
         {/* Job 2 */}
@@ -43,7 +43,7 @@ const WorkExperience = () => {
             'Developed and maintained a high-traffic platform serving over 100,000 active users, leveraging React to deliver fast, interactive, and user-friendly interfaces.',
             'Achieved over 85% test coverage by implementing comprehensive End-to-End (E2E) testing with Cypress and TypeScript, ensuring reliable and high-quality releases.',
           ]}
-          imageUrl="/onelab.png"
+          imageUrl="/work-experience/onelab.png"
         />
 
         {/* Job 3 */}
@@ -56,7 +56,7 @@ const WorkExperience = () => {
             'Owned the development of a data visualization–driven sustainability management platform using React, SCSS, and RESTful APIs, ensuring compliance with government regulations and delivering seamless carbon emissions tracking for an enterprise client',
             'Developed an efficient SaaS platform for a targeted advertising website, leveraging React, Ant Design, and LESS to deliver visually engaging charts and insightful analytics for end users.',
           ]}
-          imageUrl="/LnData Logo.jpeg"
+          imageUrl="/work-experience/LnData Logo.jpeg"
         />
       </div>
     </section>

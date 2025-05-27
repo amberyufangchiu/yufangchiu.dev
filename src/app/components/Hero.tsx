@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
       <Image
-        src="/Yu-fang Chiu.jpeg"
+        src="/about/Yu-fang Chiu.jpeg"
         alt="Photo of Yufang"
         className="h-36 w-36 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
         width={144}

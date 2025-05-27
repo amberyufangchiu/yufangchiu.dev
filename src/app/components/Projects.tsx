@@ -54,7 +54,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <ProjectCard
           href="https://murmur-ecru.vercel.app/"
-          imgSrc="/Murmur.png"
+          imgSrc="/projects/Murmur.png"
           title="murmur"
           subtitle="a white noise app"
           description="A calming web app that lets you mix ambient sounds to create your perfect soundscape — whether you're trying to relax, focus, or drift off to sleep."
@@ -63,7 +63,7 @@ const Projects = () => {
 
         <ProjectCard
           href="https://dive-deep-into-z-index.vercel.app"
-          imgSrc="/zindex.png"
+          imgSrc="/projects/zindex.png"
           title="Dive Deep into Z-Index"
           subtitle="an interactive CSS demo"
           description="An educational demo that visually explains how CSS z-index works through layered examples, perfect for beginners and visual learners."
