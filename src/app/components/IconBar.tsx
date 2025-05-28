@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface IconBarProps {
   darkMode: boolean;
@@ -8,16 +8,12 @@ interface IconBarProps {
 const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
   return (
     <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mb-6 flex justify-center">
-      <div className="pointer-events-auto border border-gray-100 relative flex items-center gap-6 rounded-full bg-background/70 backdrop-blur-md  px-6 py-3 shadow-lg transition-all [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]">
+      <div className="bg-background/70 pointer-events-auto relative flex items-center gap-6 rounded-full border border-gray-100 px-6 py-3 shadow-lg [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] backdrop-blur-md transition-all">
         {/* Home Icon */}
-        <a
-          href="https://yufangchiu.vercel.app/"
-          target="_blank"
-          className="group relative flex items-center"
-        >
+        <a href="https://yufangchiu.vercel.app/" target="_blank" className="group relative flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="size-5 text-neutral-700 dark:text-gray-100 group-hover:scale-110 group-hover:text-primary transition-transform"
+            className="group-hover:text-primary size-5 text-neutral-700 transition-transform group-hover:scale-110 dark:text-gray-100"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -31,11 +27,7 @@ const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
         </a>
 
         {/* GitHub Icon */}
-        <a
-          href="https://github.com/amberyufangchiu"
-          target="_blank"
-          className="group relative flex items-center"
-        >
+        <a href="https://github.com/amberyufangchiu" target="_blank" className="group relative flex items-center">
           <svg viewBox="0 0 438.549 438.549" className="size-5">
             <path
               fill="currentColor"
@@ -53,11 +45,7 @@ const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
           target="_blank"
           className="group relative flex items-center"
         >
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            className="size-4"
-          >
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-4">
             <path
               fill="currentColor"
               d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
@@ -69,14 +57,10 @@ const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
         </a>
 
         {/* Mail Icon */}
-        <a
-          href="mailto:amber.yufangchiu@gmail.com"
-          target="_blank"
-          className="group relative flex items-center"
-        >
+        <a href="mailto:amber.yufangchiu@gmail.com" target="_blank" className="group relative flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="size-5 text-neutral-700 dark:text-gray-100 group-hover:scale-110 group-hover:text-primary transition-transform"
+            className="group-hover:text-primary size-5 text-neutral-700 transition-transform group-hover:scale-110 dark:text-gray-100"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -89,17 +73,14 @@ const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
           </span>
         </a>
 
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="group relative flex items-center"
-        >
+        <button onClick={() => setDarkMode(!darkMode)} className="group relative flex items-center">
           {darkMode ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="size-5 text-neutral-700 dark:text-gray-100 group-hover:scale-110 group-hover:text-primary transition-transform"
+              className="group-hover:text-primary size-5 cursor-pointer text-neutral-700 transition-transform group-hover:scale-110 dark:text-gray-100"
             >
               <path
                 strokeLinecap="round"
@@ -115,7 +96,7 @@ const IconBar = ({ darkMode, setDarkMode }: IconBarProps) => {
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="size-5 text-neutral-700 dark:text-gray-100 group-hover:scale-110 group-hover:text-primary transition-transform"
+              className="group-hover:text-primary size-5 cursor-pointer text-neutral-700 transition-transform group-hover:scale-110 dark:text-gray-100"
             >
               <path
                 d="M7.5 0C7.77614 0 8 0.223858 8 0.5V2.5C8 2.77614 7.77614 3 7.5 3C7.22386 3 7 2.77614 7 2.5V0.5C7 0.223858 7.22386 0 7.5 0ZM2.1967 2.1967C2.39196 2.00144 2.70854 2.00144 2.90381 2.1967L4.31802 3.61091C4.51328 3.80617 4.51328 4.12276 4.31802 4.31802C4.12276 4.51328 3.80617 4.51328 3.61091 4.31802L2.1967 2.90381C2.00144 2.70854 2.00144 2.39196 2.1967 2.1967ZM0.5 7C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8H2.5C2.77614 8 3 7.77614 3 7.5C3 7.22386 2.77614 7 2.5 7H0.5ZM2.1967 12.8033C2.00144 12.608 2.00144 12.2915 2.1967 12.0962L3.61091 10.682C3.80617 10.4867 4.12276 10.4867 4.31802 10.682C4.51328 10.8772 4.51328 11.1938 4.31802 11.3891L2.90381 12.8033C2.70854 12.9986 2.39196 12.9986 2.1967 12.8033ZM12.5 7C12.2239 7 12 7.22386 12 7.5C12 7.77614 12.2239 8 12.5 8H14.5C14.7761 8 15 7.77614 15 7.5C15 7.22386 14.7761 7 14.5 7H12.5ZM10.682 4.31802C10.4867 4.12276 10.4867 3.80617 10.682 3.61091L12.0962 2.1967C12.2915 2.00144 12.608 2.00144 12.8033 2.1967C12.9986 2.39196 12.9986 2.70854 12.8033 2.90381L11.3891 4.31802C11.1938 4.51328 10.8772 4.51328 10.682 4.31802ZM8 12.5C8 12.2239 7.77614 12 7.5 12C7.22386 12 7 12.2239 7 12.5V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V12.5ZM10.682 10.682C10.8772 10.4867 11.1938 10.4867 11.3891 10.682L12.8033 12.0962C12.9986 12.2915 12.9986 12.608 12.8033 12.8033C12.608 12.9986 12.2915 12.9986 12.0962 12.8033L10.682 11.3891C10.4867 11.1938 10.4867 10.8772 10.682 10.682ZM5.5 7.5C5.5 6.39543 6.39543 5.5 7.5 5.5C8.60457 5.5 9.5 6.39543 9.5 7.5C9.5 8.60457 8.60457 9.5 7.5 9.5C6.39543 9.5 5.5 8.60457 5.5 7.5ZM7.5 4.5C5.84315 4.5 4.5 5.84315 4.5 7.5C4.5 9.15685 5.84315 10.5 7.5 10.5C9.15685 10.5 10.5 9.15685 10.5 7.5C10.5 5.84315 9.15685 4.5 7.5 4.5Z"
